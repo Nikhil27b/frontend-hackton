@@ -1,0 +1,94 @@
+@media screen and (min-width: 1750px) {
+}
+
+@media screen and (max-width: 1199px) {
+    .group .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+  #home-page .container img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .community .community-row img {
+    max-width: 100%;
+  }
+  .community .community-content {
+    padding-right: 0px;
+    gap: 10px;
+  }
+  .community .community-content .cards {
+    width: 100%;
+  }
+  .about .container .about-image img {
+    height: 100%;
+}
+.about .container .about-image h1 {
+    padding: 20px 0;
+}
+.group .container {
+    grid-template-columns: 1fr;
+}
+.group-card {
+    width: 100%;
+}
+.testi-card {
+    width: 100%;
+}
+.testi-card:nth-child(2) {
+    margin: 0;
+}
+.faq-main {
+    padding: 50px 10px;
+    margin-left: 0;
+}
+footer {
+    padding: 50px 20px;
+}
+.social-icons {
+    display: none;
+}
+.social-mobile{
+    display: flex;
+  }
+  .testi-card {
+    margin: 10px 0;
+}
+}
+
+@media (max-width: 480px) {
+    .community .title h1 {
+        font-size: 24px;
+    }
+    .about .container .about-content ul li {
+        font-size: 18px;
+        padding: 7px 0px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #home-page .container h1 {
+        font-size: 44px;
+    }
+    .community .community-content .cards {
+        padding: 20px 20px;
+        margin: 10px 0;
+    }
+    .profile-name h1 {
+        text-align: center;
+    }
+    .group-card {
+        margin: 40px 0;
+    }
+    .testi-card {
+        height: 100%;
+    }
+}
