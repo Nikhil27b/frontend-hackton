@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: "Gilroy-Extra";
+  src: url("../fonts/Gilroy-ExtraBold.otf") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.otf") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy-Light";
+}
+
+.container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1,
+h3 {
+  padding-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  /* background-color: #ffffff; */
+}
+
+.navbar .logo img {
+  height: 30px;
+}
+
+.navbar .nav-items ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-items ul li {
+  padding: 0 20px;
+}
+
+.navbar .nav-items ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-button a {
+  padding: 10px 40px;
+  background-color: #121c36;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #59ce8f;
+}
+
+/* home page */
+
+#home-page {
+  background-color: transparent;
+  background-image: radial-gradient(
+      circle farthest-corner at 0 60%,
+      rgba(174, 66, 200, 0.44),
+      rgba(174, 66, 200, 0) 22%
+    ),
+    radial-gradient(
+      circle farthest-corner at 120% 40%,
+      rgba(114, 84, 236, 0.7),
+      rgba(114, 84, 236, 0) 22%
+    ),
+    radial-gradient(
+      circle farthest-corner at 80% 55%,
+      rgba(255, 116, 116, 0.5),
+      rgba(255, 116, 116, 0) 19%
+    ),
+    radial-gradient(
+      circle farthest-corner at 100% 10%,
+      rgba(174, 66, 200, 0.45),
+      rgba(174, 66, 200, 0) 12%
+    ),
+    radial-gradient(
+      circle farthest-corner at -40% 20%,
+      #7254ec,
+      rgba(114, 84, 236, 0) 24%
+    ),
+    radial-gradient(
+      circle farthest-corner at 0 100%,
+      rgba(174, 66, 200, 0.6),
+      transparent 28%
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(38%, #ebaefa), color-stop(54%, #eebcfb), color-stop(83%, #fefefe));
+  background-image: radial-gradient(
+      circle farthest-corner at 0 60%,
+      rgba(174, 66, 200, 0.44),
+      rgba(174, 66, 200, 0) 22%
+    ),
+    radial-gradient(
+      circle farthest-corner at 120% 40%,
+      rgba(114, 84, 236, 0.7),
+      rgba(114, 84, 236, 0) 22%
+    ),
+    radial-gradient(
+      circle farthest-corner at 80% 55%,
+      rgba(255, 116, 116, 0.5),
+      rgba(255, 116, 116, 0) 19%
+    ),
+    radial-gradient(
+      circle farthest-corner at 100% 10%,
+      rgba(174, 66, 200, 0.45),
+      rgba(174, 66, 200, 0) 12%
+    ),
+    radial-gradient(
+      circle farthest-corner at -40% 20%,
+      #7254ec,
+      rgba(114, 84, 236, 0) 24%
+    ),
+    radial-gradient(
+      circle farthest-corner at 0 100%,
+      rgba(174, 66, 200, 0.6),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #fefefe, #ebaefa 38%, #eebcfb 54%, #fefefe 83%);
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+#home-page .container {
+  /* background-color: #F3F1FD; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#home-page .container img {
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#home-page .container h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Gilroy-Extra";
+  font-size: 54px;
+  color: #121c36;
+}
+
+#home-page .container p {
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#home-page .container a {
+  padding: 10px 30px;
+  background-color: #59ce8f;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #121c36;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Community CSS Started here */
+
+.community .container {
+  min-height: 100vh;
+}
+
+.community .community-row .title {
+  padding-top: 20px;
+}
+
+.community .title h1 {
+  color: #121c36;
+
+  font-size: 30px;
+  font-family: "Gilroy-Extra";
+}
+.community .community-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.community .community-row img {
+  max-width: 500px;
+}
+
+.community .community-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.community .community-content .cards {
+  width: 200px;
+  padding: 50px 20px;
+  margin: 10px;
+  background-color: #ffd6c0;
+  color: #121c36;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.community .community-content .cards:nth-child(2),
+.community .community-content .cards:nth-child(3) {
+  background-color: #ceefd0;
+}
+
+.community .community-content .cards p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* about container */
+
+.about .container {
+  background-color: #f3f1fd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .container .about-image h1 {
+  font-family: "Gilroy-Extra";
+  text-align: center;
+  color: #121c36;
+  font-size: 30px;
+}
+
+.about .container .about-image img {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .container .about-content ul {
+  list-style: none;
+}
+
+.about .container .about-content h1 {
+  font-family: "Gilroy-Extra";
+  color: #121c36;
+}
+
+.about .container .about-content ul li {
+  font-size: 22px;
+  padding: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.icon {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card {
+  background-color: #fff;
+  top: -100px;
+  left: -5px;
+  width: 280px;
+  height: 100px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  justify-content: space-around;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.insta:hover .card,
+.youtube:hover .card,
+.github:hover .card {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.card .user_img img {
+  height: 70px;
+  margin-right: 20px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.user_info h1 {
+  font-size: 18px;
+  color: #1e212d;
+}
+
+.user_info p {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+.btn {
+  font-size: 14px;
+  margin: 20px 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1e212d;
+}
+
+.btn:hover {
+  color: #fb3640;
+}
+
+/* Group Community */
+
+/* .group .container
+{
+    height: 100vh;} */
+
+.group .title h1 {
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Gilroy-Extra";
+  color: #121c36;
+  font-size: 36px;
+}
+
+.group .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.group-card {
+  width: 360px;
+  height: 262px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 25px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: 20px 0;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.user-online-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #53f45a;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name h1 {
+  font-size: 28px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.profile-role {
+  color: #6d6d6d;
+  text-align: center;
+}
+
+.card-footer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.social-buttons button {
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  margin: 10px 0;
+  background-color: #59ce8f;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #121c36;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Testimonal started here */
+.testimonial {
+  background-color: #f3f1fd;
+}
+.testimonial .title h1 {
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Gilroy-Extra";
+  color: #121c36;
+  font-size: 36px;
+}
+
+.testimonial .container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.testi-card {
+  width: 350px;
+  height: 230px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #121c36;
+  user-select: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.testi-card:hover {
+  filter: drop-shadow(0 0 10px #000000);
+}
+
+.testi-card:nth-child(2) {
+  margin: 0 20px;
+}
+
+.user_img img {
+  height: 40px;
+  width: 45px;
+  margin-right: 15px;
+  border-radius: 50px;
+}
+
+.teuser {
+  display: flex;
+  align-items: center;
+}
+
+.user_content h1 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.user_content p {
+  color: #59ce8f;
+}
+
+.review {
+  padding: 20px 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* FQ */
+.faq {
+  text-align: center;
+}
+
+.faq {
+  margin-top: 70px;
+}
+
+.faq h1 {
+  text-align: center;
+  font-family: "Gilroy-Extra";
+  color: #121c36;
+  font-size: 36px;
+}
+
+.faq-main {
+  padding: 50px 50px;
+  margin-left: 40px;
+}
+
+::-webkit-details-marker {
+  float: left !important;
+  margin-top: 3px;
+}
+
+details {
+  padding: 5px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+details p {
+  padding: 20px 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* footer */
+
+footer {
+  padding: 50px 100px;
+  background-color: #f3f1fd;
+}
+footer .left-side img {
+  height: 30px;
+}
+footer h4 {
+  padding: 10px 0;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+footer ul li {
+  margin-top: 5px;
+  margin-right: 20px;
+}
