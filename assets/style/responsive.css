@@ -71,6 +71,9 @@ footer {
         font-size: 18px;
         padding: 7px 0px;
     }
+    #home-page .container h1 {
+        font-size: 48px;
+    }
 }
 
 

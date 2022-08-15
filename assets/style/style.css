@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  padding: 20px;
+  padding: 0 20px;
   min-height: 100vh;
 }
 
@@ -34,114 +34,37 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 15px 20px;
   /* background-color: #ffffff; */
 }
-
+.navbar .logo {
+  font-family: "Gilroy-Extra";
+}
 .navbar .logo img {
   height: 30px;
 }
 
-.navbar .nav-items ul {
-  display: flex;
-  list-style: none;
-}
-
-.navbar .nav-items ul li {
-  padding: 0 20px;
-}
-
-.navbar .nav-items ul li a {
+.nav-button a {
+  padding: 10px 10px;
   text-decoration: none;
-  color: #000000;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  color: #121c36;
   font-weight: 500;
 }
-
-.nav-button a {
-  padding: 10px 40px;
-  background-color: #121c36;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: #59ce8f;
+.nav-button svg {
+  font-size: 20px;
 }
 
 /* home page */
 
 #home-page {
-  background-color: transparent;
-  background-image: radial-gradient(
-      circle farthest-corner at 0 60%,
-      rgba(174, 66, 200, 0.44),
-      rgba(174, 66, 200, 0) 22%
-    ),
-    radial-gradient(
-      circle farthest-corner at 120% 40%,
-      rgba(114, 84, 236, 0.7),
-      rgba(114, 84, 236, 0) 22%
-    ),
-    radial-gradient(
-      circle farthest-corner at 80% 55%,
-      rgba(255, 116, 116, 0.5),
-      rgba(255, 116, 116, 0) 19%
-    ),
-    radial-gradient(
-      circle farthest-corner at 100% 10%,
-      rgba(174, 66, 200, 0.45),
-      rgba(174, 66, 200, 0) 12%
-    ),
-    radial-gradient(
-      circle farthest-corner at -40% 20%,
-      #7254ec,
-      rgba(114, 84, 236, 0) 24%
-    ),
-    radial-gradient(
-      circle farthest-corner at 0 100%,
-      rgba(174, 66, 200, 0.6),
-      transparent 28%
-    ),
-    -webkit-gradient(linear, left top, left bottom, from(#fefefe), color-stop(38%, #ebaefa), color-stop(54%, #eebcfb), color-stop(83%, #fefefe));
-  background-image: radial-gradient(
-      circle farthest-corner at 0 60%,
-      rgba(174, 66, 200, 0.44),
-      rgba(174, 66, 200, 0) 22%
-    ),
-    radial-gradient(
-      circle farthest-corner at 120% 40%,
-      rgba(114, 84, 236, 0.7),
-      rgba(114, 84, 236, 0) 22%
-    ),
-    radial-gradient(
-      circle farthest-corner at 80% 55%,
-      rgba(255, 116, 116, 0.5),
-      rgba(255, 116, 116, 0) 19%
-    ),
-    radial-gradient(
-      circle farthest-corner at 100% 10%,
-      rgba(174, 66, 200, 0.45),
-      rgba(174, 66, 200, 0) 12%
-    ),
-    radial-gradient(
-      circle farthest-corner at -40% 20%,
-      #7254ec,
-      rgba(114, 84, 236, 0) 24%
-    ),
-    radial-gradient(
-      circle farthest-corner at 0 100%,
-      rgba(174, 66, 200, 0.6),
-      transparent 28%
-    ),
-    linear-gradient(180deg, #fefefe, #ebaefa 38%, #eebcfb 54%, #fefefe 83%);
-  background-clip: border-box;
-  -webkit-text-fill-color: inherit;
-  -o-object-fit: fill;
-  object-fit: fill;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  background-image: url("../images/bg2.png");
 }
 
 #home-page .container {
-  /* background-color: #F3F1FD; */
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -150,10 +73,11 @@ h3 {
 }
 
 #home-page .container img {
-  width: 600px;
-  height: 200px;
+  width: 750px;
+  height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  margin-top: 50px;
 }
 
 #home-page .container h1 {
@@ -178,7 +102,9 @@ h3 {
   font-family: "Poppins", sans-serif;
   color: #121c36;
   font-weight: 600;
+  border-radius: 10px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Community CSS Started here */
@@ -362,10 +288,6 @@ h3 {
 }
 
 /* Group Community */
-
-/* .group .container
-{
-    height: 100vh;} */
 
 .group .title h1 {
   padding: 40px 0;
@@ -569,6 +491,10 @@ details p {
 footer {
   padding: 50px 100px;
   background-color: #f3f1fd;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 footer .left-side img {
   height: 30px;
@@ -586,13 +512,12 @@ footer ul li {
   margin-right: 20px;
 }
 
-
-.social-mobile{
+.social-mobile {
   display: none;
   padding: 20px 0;
 }
 
-.social-mobile i{
+.social-mobile i {
   position: relative;
   margin-right: 20px;
   background-color: #fff;
@@ -606,4 +531,19 @@ footer ul li {
   align-items: center;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+footer .right-side a{
+  padding: 10px 30px;
+  background-color: #59ce8f;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #121c36;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer .right-side a:nth-child(2){
+  background-color: #121c36;
+  color: #ffffff;
 }
