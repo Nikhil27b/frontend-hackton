@@ -98,20 +98,17 @@ ScrollTrigger.matchMedia({
         stagger: 0.4,
         pin: true,
         scrub: 1,
+
       },
     });
 
     banner.fromTo(".title", { opacity: 0, y: 50 }, { opacity: 1, y: 0 });
     banner.fromTo(
       ".community-video img",
-      { opacity: 0, x: 50 },
+      { opacity: 0, x: -50 },
       { opacity: 1, x: 0 }
     );
-    // banner.fromTo(
-    //   ".community-content .cards",
-    //   { opacity: 0, x: -50 },
-    //   { opacity: 1, x: 0},
-    // );
+
     banner.from(".community-content .cards", {
       stagger: 0.2,
       opacity: 0,
@@ -188,8 +185,7 @@ ScrollTrigger.matchMedia({
         start: "-20%",
         end: "50%",
         pin: true,
-        stagger: 0.2,
-
+        stagger: 0.2,   
         scrub: 1,
       },
     });
@@ -205,22 +201,22 @@ ScrollTrigger.matchMedia({
       y: -30,
     });
     testimonial.from(".testimonial .testi-card", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
     });
     testimonial.from(".testimonial .testi-card .user_img", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
     });
     testimonial.from(".testimonial .testi-card .user_content", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
     });
     testimonial.from(".testimonial .testi-card .review", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
     });
@@ -231,8 +227,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: "#fq",
         start: "-40%",
-        end: "0%",
-        scrub: 1,
+        end: "-30%",
       },
     });
     fq.from(".faq h1", {
@@ -241,14 +236,13 @@ ScrollTrigger.matchMedia({
       y: -30,
     });
     fq.from(".faq p", {
-      stagger: 0.2,
       opacity: 0,
       y: -30,
     });
     fq.from(".faq-main summary", {
-      stagger: 0.2,
       opacity: 0,
-      y: -30,
+      stagger: 0.1,
+      y: -10,
     });
   },
 });

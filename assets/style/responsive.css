@@ -61,6 +61,10 @@ footer {
   .testi-card {
     margin: 10px 0;
 }
+.right-side{
+    margin-top: 50px;
+
+}
 }
 
 @media (max-width: 480px) {
