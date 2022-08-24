@@ -94,11 +94,8 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".community",
         start: "-20%",
-        end: "10%",
-        stagger: 0.4,
-        pin: true,
-        scrub: 1,
-
+        end: "40%",
+        stagger: 0.2,
       },
     });
 
@@ -109,11 +106,17 @@ ScrollTrigger.matchMedia({
       { opacity: 1, x: 0 }
     );
 
-    banner.from(".community-content .cards", {
+    banner.from(".community-content .wecards", {
       stagger: 0.2,
       opacity: 0,
-      x: -30,
+      y: -30,
     });
+    banner.from(".community-content .wecards-2", {
+      opacity: 0,
+      stagger: 0.2,
+      y: -10,
+    },"-=.5");
+    
 
     //author
 
@@ -121,41 +124,42 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".about",
         start: "-20%",
+        stagger: 0.1,
         end: "10%",
-        pin: true,
-        scrub: 1,
       },
     });
 
     author.fromTo(
       ".about-image img",
       { opacity: 0, y: -50 },
-      { opacity: 1, y: 0 }
+      { opacity: 1, y: 0 },
+      "-=2.5"
     );
     author.fromTo(
       ".about-image h1",
       { opacity: 0, x: -50 },
-      { opacity: 1, x: 0 }
+      { opacity: 1, x: 0 },
+      "-=1.5"
     );
     author.from(".about-content", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
-    });
+    },"-=1.5");
     author.from(".about-content h1", {
-      stagger: 0.2,
+      stagger: 0.1,
       y: -30,
-    });
+    },"-=1.5");
 
     author.from(".about-content li", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
-    });
+    },"-=1.5");
     author.from(".social-icons span", {
       stagger: 0.2,
       opacity: 0,
       y: -30,
-    });
+    },"-=1");
 
     //Group
 
@@ -164,7 +168,6 @@ ScrollTrigger.matchMedia({
         trigger: ".group",
         start: "-20%",
         end: "10%",
-        scrub: 1,
       },
     });
     group.from(".group .title h1", {
@@ -183,55 +186,42 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".testimonial",
         start: "-20%",
-        end: "50%",
-        pin: true,
-        stagger: 0.2,   
-        scrub: 1,
+        end: "40%",
+        stagger: 0.1,   
       },
     });
 
     testimonial.from(".testimonial", {
-      stagger: 0.2,
       opacity: 0,
+      stagger: 0.2,   
+
       backgroundColor: "#ffffff",
     });
     testimonial.from(".testimonial .title h1", {
-      stagger: 0.2,
       opacity: 0,
       y: -30,
+      stagger: 0.1,   
+
     });
     testimonial.from(".testimonial .testi-card", {
-      stagger: 0.1,
       opacity: 0,
+      stagger: 0.3,   
       y: -30,
     });
-    testimonial.from(".testimonial .testi-card .user_img", {
-      stagger: 0.1,
-      opacity: 0,
-      y: -30,
-    });
-    testimonial.from(".testimonial .testi-card .user_content", {
-      stagger: 0.1,
-      opacity: 0,
-      y: -30,
-    });
-    testimonial.from(".testimonial .testi-card .review", {
-      stagger: 0.1,
-      opacity: 0,
-      y: -30,
-    });
+
 
     //F&Q
 
     let fq = gsap.timeline({
       scrollTrigger: {
         trigger: "#fq",
-        start: "-40%",
-        end: "-30%",
+        start: "-50%",
+        end: "-40%",
+        stagger: 0.1,
       },
     });
     fq.from(".faq h1", {
-      stagger: 0.2,
+      stagger: 0.1,
       opacity: 0,
       y: -30,
     });
