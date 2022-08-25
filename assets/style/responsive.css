@@ -2,9 +2,9 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .group .container {
-        grid-template-columns: 1fr 1fr;
-    }
+  .group .container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -18,7 +18,9 @@
     object-fit: cover;
   }
   .community .community-row img {
+    object-fit: cover;
     max-width: 100%;
+    height: 300px;
   }
   .community .community-content {
     padding-right: 0px;
@@ -29,73 +31,98 @@
   }
   .about .container .about-image img {
     height: 100%;
-}
-.about .container .about-image h1 {
+  }
+  .about .container .about-image h1 {
     padding: 20px 0;
-}
-.group .container {
+  }
+  .group .container {
     grid-template-columns: 1fr;
-}
-.group-card {
+  }
+  .group-card {
     width: 100%;
-}
-.testi-card {
+  }
+  .testi-card {
     width: 100%;
-}
-.testi-card:nth-child(2) {
+  }
+  .testi-card:nth-child(2) {
     margin: 0;
-}
-.faq-main {
+  }
+  .faq-main {
     padding: 50px 10px;
     margin-left: 0;
-}
-footer {
+  }
+  footer {
     padding: 50px 20px;
-}
-.social-icons {
+  }
+  .social-icons {
     display: none;
-}
-.social-mobile{
+  }
+  .social-mobile {
     display: flex;
   }
   .testi-card {
     margin: 10px 0;
-}
-.right-side{
+  }
+  .right-side {
     margin-top: 50px;
-
-}
+  }
+  .social-buttons button {
+    padding: 10px 90px;
+    margin: 10px 0;
+  }
+  .wecards-2 {
+    padding: 20px 0px;
+    background-color: #fff;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons a {
+    margin-right: 10px;
+  }
+  .wecards-2 li {
+    font-weight: 700;
+    font-size: 22px;
+    color: #013354;
+  }
+  .card-footer {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .community .title h1 {
-        font-size: 24px;
-    }
-    .about .container .about-content ul li {
-        font-size: 18px;
-        padding: 7px 0px;
-    }
-    #home-page .container h1 {
-        font-size: 48px;
-    }
+  .community .title h1 {
+    font-size: 24px;
+  }
+  .about .container .about-content ul li {
+    font-size: 18px;
+    padding: 7px 0px;
+  }
+  #home-page .container h1 {
+    font-size: 48px;
+  }
 }
 
-
 @media (max-width: 320px) {
-    #home-page .container h1 {
-        font-size: 44px;
-    }
-    .community .community-content .cards {
-        padding: 20px 20px;
-        margin: 10px 0;
-    }
-    .profile-name h1 {
-        text-align: center;
-    }
-    .group-card {
-        margin: 40px 0;
-    }
-    .testi-card {
-        height: 100%;
-    }
+  #home-page .container h1 {
+    font-size: 44px;
+  }
+  .community .community-content .cards {
+    padding: 20px 20px;
+    margin: 10px 0;
+  }
+
+  .group-card {
+    margin: 40px 0;
+  }
+  .testi-card {
+    height: 100%;
+  }
+  .social-buttons button {
+    padding: 10px 20px;
+  }
+  .card-header img {
+    height: 100%;
+  }
 }

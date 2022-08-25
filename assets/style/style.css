@@ -127,8 +127,7 @@ h3 {
   font-family: "Gilroy-Extra";
 }
 .community .community-row {
-  padding: 50px 20px;
-  align-items: center;
+  padding: 50px 30px;
   display: flex;
   flex-direction: column;
  }
@@ -354,10 +353,10 @@ h3 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 3px;
   justify-content: space-between;
   padding-bottom: 20px;
-  box-shadow: 0 0 5px 0 #6d6d6d;
+  box-shadow: 0 0 3px 0 #9f9f9f;
   margin: 30px 0;
 }
 
